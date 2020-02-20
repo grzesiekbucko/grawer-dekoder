@@ -1,4 +1,4 @@
-  
+
 // licznik zanków
 function charcounts(startfrom, charend) {
     var len = document.getElementById(startfrom).value.length;
@@ -41,7 +41,7 @@ $(document).ready(function () {
 $(document).ready(function () {
 
 	$('#szblon_list_DK').on('click', 'li', function () {
-			var selected_szablon = $(this).attr('name');
+		var	selected_szablon = $(this).attr('name');
             var selected_szablon_name = $('#' + selected_szablon +'_p').attr('name', selected_szablon);
 
             var text_Path_L1 = $('#text_Path_' + selected_szablon + '_L1');

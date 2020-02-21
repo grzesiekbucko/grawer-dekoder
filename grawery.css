@@ -128,7 +128,7 @@ ul li input[type=radio] {
 	fill: #615e57;
 	text-align:center;
 	width:100%;
-	text-shadow:0 1px 0 rgba(255, 255, 255, 0.4), 0 -1px 0 #603320;
+	/* text-shadow:0 1px 0 rgba(255, 255, 255, 0.4), 0 -1px 0 #603320; */
 	letter-spacing:0.6px;
 	font-family: Great Vibes;
 }
@@ -151,10 +151,10 @@ ul li input[type=radio] {
 #text_preview_B2_CH_03_L4{
 	font-family: Noto Serif;
 }
-	
+
 #text_preview_B2_CH_04_L4{
 	font-family: Noto Serif;
-}	
+}
 
 #text_preview_B2_KM_01_L4{
 	font-family: Noto Serif;
@@ -166,10 +166,8 @@ ul li input[type=radio] {
 
 #text_preview_B2_KM_03_L4{
 	font-family: Noto Serif;
-}	
+}
 
 #text_preview_B2_KM_04_L4{
 	font-family: Noto Serif;
 }
-		
-		

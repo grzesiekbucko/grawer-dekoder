@@ -10,16 +10,18 @@
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js"
             integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6"
             crossorigin="anonymous"></script>
+
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css"
           integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
     <link href="https://fonts.googleapis.com/css?family=Great+Vibes&display=swap" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css?family=Noto+Serif&display=swap" rel="stylesheet">
     <link rel="stylesheet" type="text/css" href="grawery.css">
     <script src="grawery.js" type="text/javascript"></script>
+    <script src="https://use.fontawesome.com/2d4a782e0b.js" type="text/javascript"></script>
 </head>
 <div class="container-fluid" style="margin-top: 50px">
 
-<div class="row justify-content-md-center align-self-center" style="margin:0px">
+<div class="row" style="margin:0px">
     <div class="col-5" id="dewoc_komplet_div" style="display: none">
             <div class="k_table_container f-grid-6"><p class="section_label">Wybierz szablon</p>
                 <div class="mx_headen" style="display: block;">
@@ -120,49 +122,51 @@
                 </div>
             </div>
         </div>
-
-          <div class="col-3 align-self-center">
-
-          <form style="margin: 10px; display:block" >
-              <div class="form-group row">
-                  <label id="label_LS" for="LS" class="col-2 col-form-label">Szablon</label>
-                  <div class="col-8">
-                      <span class="form-control" id="LS"></span>
-                  </div>
-              </div>
-              <div class="form-group row">
-                  <label id="label_L1" for="L1" class="col-2 col-form-label">L1</label>
-                  <div class="col-8">
-                      <span class="form-control" id="L1"></span>
-                  </div>
-              </div>
-              <div class="form-group row">
-                  <label id="label_L2" for="L2" class="col-2 col-form-label">L2</label>
-                  <div class="col-8">
-                      <span class="form-control" id="L2"></span>
-                  </div>
-              </div>
-              <div class="form-group row">
-                  <label id="label_L3" for="L3" class="col-2 col-form-label">L3</label>
-                  <div class="col-8">
-                      <span class="form-control" id="L3"></span>
-                  </div>
-              </div>
-              <div class="form-group row">
-                  <label id="label_LD" for="LD" class="col-2 col-form-label">LD</label>
-                  <div class="col-8">
-                      <span class="form-control" id="LD"></span>
-                  </div>
-              </div>
-          </form>
-        </div>
-<div class="col-5 align-self-center">
-        <input id="text" style="margin: 10px; height:80px" class="form-control col-12">
-        <button style="margin: 10px; width: 300px" id="button2" class="btn btn-primary btn-sm">Wczytaj</button>
-        <button style="margin: 10px; width: 100px" id="button3" class="btn btn-outline-secondary btn-sm">Wyczyść</button>
 </div>
 
+<div class="row justify-content-md-center align-self-center">
+<div class="col-sm-12 col-md-6 col-lg-4">
+        <form style="margin: 10px; display:block" >
+            <div class="form-group row">
+                <label id="label_LS" for="LS" class="col-2 col-form-label">Szablon</label>
+                <div class="col-8">
+                    <span class="form-control" id="LS"></span>
+                </div>
+            </div>
+            <div class="form-group row">
+                <label id="label_L1" for="L1" class="col-2 col-form-label">L1</label>
+                <div class="col-8">
+                    <span class="form-control" id="L1"></span>
+                </div>
+            </div>
+            <div class="form-group row">
+                <label id="label_L2" for="L2" class="col-2 col-form-label">L2</label>
+                <div class="col-8">
+                    <span class="form-control" id="L2"></span>
+                </div>
+            </div>
+            <div class="form-group row">
+                <label id="label_L3" for="L3" class="col-2 col-form-label">L3</label>
+                <div class="col-8">
+                    <span class="form-control" id="L3"></span>
+                </div>
+            </div>
+            <div class="form-group row">
+                <label id="label_LD" for="LD" class="col-2 col-form-label">LD</label>
+                <div class="col-8">
+                    <span class="form-control" id="LD"></span>
+                </div>
+            </div>
+        </form>
+</div>
 
+<div class="col-sm-12 col-md-6 col-lg-4 align-self-center">
+      <input id="text" style="height:80px" class="form-control col-12">
+
+      <button style="margin-top: 10px;" id="button2" class="btn btn-primary btn-sm col-sm-6 col-md-6 col-lg-6">Wczytaj</button>
+      <button style="margin-top: 10px;" id="button3" class="btn btn-outline-secondary btn-sm col-sm-6 col-md-6 col-lg-4">Wyczyść</button>
+
+</div>
 </div>
 <div class="row justify-content-md-center">
     <div class="k_photo_details_container col-4">
@@ -437,8 +441,6 @@
         </div>
     </div>
 </div>
-
-<div id="footer" style="margin-top: 250px"></div>
 </div>
 <script>
 
@@ -512,13 +514,7 @@ var arr_LD;
   });
 
 $('#button3').on('click',function () {
-
-  // $('#inp_line_1').val('').click();
-  // $('#inp_line_2').val('').click();
-  // $('#inp_line_3').val('').click();
-  // $('#inp_line_4').val('').click();
   location.reload(true);
-
   });
 
 });
